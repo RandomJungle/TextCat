@@ -7,6 +7,12 @@ neo_corpus_path = root+"neocorpus/"
 
 stopwords = []
 
+def initListStopwords(path):
+	with open(path, 'r', encoding='utf-8') as stopf :
+		for line in stopf.readlines() :     
+			line = convertToASCII(line)
+	        stopwords.append(re.sub('\n', '', line))
+
 with open(root+'stopwords/persons_stopwords.txt', 'r', encoding='utf-8') as stopf :
     
 	for line in stopf.readlines() :     

@@ -40,8 +40,19 @@ class Metrics_tool:
     				result.append(row[index])
     	return result
     
-    def output_results():
+    def output_graphic():
     	
+    	
+    
+    def save_results():
+    	
+		with open (self.directory+'\\metrics.txt') as mf :
+			mf.write("Results for the pass : " + self.ID_ + '\n\n\n')
+			mf.write("Accuracy : " + str(self.accuracy))
+			mf.write("F-Mesure : " + str(self.fmeasure))
+			mf.write("Precision : " + str(self.precision))
+			mf.write("Recall : " + str(self.recall))
+			mf.write.(self.confusion_matrix)
     	# from all self data metrics, construct little note on the performance
     	# with or without graphics
     	# save it to file or display it
@@ -49,4 +60,4 @@ class Metrics_tool:
 if __name__ == '__main__':
 
     tool = Metrics_tool()
-    tool.output_results()
+    tool.save_results()
