@@ -1,0 +1,439 @@
+
+PREDICTIONS :
+
+Score pour le classifieur SGDClassifier(alpha=0.0001, average=False, class_weight=None, epsilon=0.1,
+       eta0=0.0, fit_intercept=True, l1_ratio=0.15,
+       learning_rate='optimal', loss='log', max_iter=None, n_iter=None,
+       n_jobs=1, penalty='none', power_t=0.5, random_state=None,
+       shuffle=True, tol=None, verbose=0, warm_start=False) : 
+0.996742671009772
+
+             precision    recall  f1-score   support
+
+   notierce       1.00      1.00      1.00       460
+     tierce       1.00      0.99      0.99       154
+
+avg / total       1.00      1.00      1.00       614
+
+[[460   0]
+ [  2 152]]
+ 
+Score pour le classifieur MLPClassifier(activation='logistic', alpha=0.0001, batch_size='auto',
+       beta_1=0.9, beta_2=0.999, early_stopping=False, epsilon=1e-08,
+       hidden_layer_sizes=(100,), learning_rate='constant',
+       learning_rate_init=0.001, max_iter=200, momentum=0.9,
+       nesterovs_momentum=True, power_t=0.5, random_state=None,
+       shuffle=True, solver='lbfgs', tol=0.0001, validation_fraction=0.1,
+       verbose=False, warm_start=False) : 
+0.998371335504886
+
+             precision    recall  f1-score   support
+
+   notierce       1.00      1.00      1.00       460
+     tierce       1.00      0.99      1.00       154
+
+avg / total       1.00      1.00      1.00       614
+
+[[460   0]
+ [  1 153]]
+ 
+Score pour le classifieur LinearSVC(C=1.0, class_weight=None, dual=True, fit_intercept=False,
+     intercept_scaling=1, loss='squared_hinge', max_iter=1000,
+     multi_class='ovr', penalty='l2', random_state=None, tol=0.0001,
+     verbose=0) : 
+0.996742671009772
+
+             precision    recall  f1-score   support
+
+   notierce       1.00      1.00      1.00       460
+     tierce       1.00      0.99      0.99       154
+
+avg / total       1.00      1.00      1.00       614
+
+[[460   0]
+ [  2 152]]
+ 
+Score pour le classifieur SVC(C=1.0, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape='ovo', degree=3, gamma='auto', kernel='linear',
+  max_iter=-1, probability=False, random_state=None, shrinking=True,
+  tol=0.001, verbose=False) : 
+0.996742671009772
+
+             precision    recall  f1-score   support
+
+   notierce       1.00      1.00      1.00       460
+     tierce       1.00      0.99      0.99       154
+
+avg / total       1.00      1.00      1.00       614
+
+[[460   0]
+ [  2 152]]
+ 
+Score pour le classifieur MultinomialNB(alpha=1.0, class_prior=None, fit_prior=True) : 
+0.995114006514658
+
+             precision    recall  f1-score   support
+
+   notierce       0.99      1.00      1.00       460
+     tierce       1.00      0.98      0.99       154
+
+avg / total       1.00      1.00      1.00       614
+
+[[460   0]
+ [  3 151]]
+ 
+Score pour le classifieur RandomForestClassifier(bootstrap=True, class_weight=None, criterion='gini',
+            max_depth=None, max_features='auto', max_leaf_nodes=None,
+            min_impurity_decrease=0.0, min_impurity_split=None,
+            min_samples_leaf=1, min_samples_split=2,
+            min_weight_fraction_leaf=0.0, n_estimators=10, n_jobs=1,
+            oob_score=False, random_state=None, verbose=0,
+            warm_start=False) : 
+0.990228013029316
+
+             precision    recall  f1-score   support
+
+   notierce       0.99      1.00      0.99       460
+     tierce       1.00      0.96      0.98       154
+
+avg / total       0.99      0.99      0.99       614
+
+[[460   0]
+ [  6 148]]
+ 
+CROSS-VALIDATION : 
+
+Classifier : 
+SGDClassifier(alpha=0.0001, average=False, class_weight=None, epsilon=0.1,
+       eta0=0.0, fit_intercept=True, l1_ratio=0.15,
+       learning_rate='optimal', loss='log', max_iter=None, n_iter=None,
+       n_jobs=1, penalty='none', power_t=0.5, random_state=None,
+       shuffle=True, tol=None, verbose=0, warm_start=False)
+Accuracy: 1.00 (+/- 0.00)
+
+# MULTI-LAYER PERCEPTRON : careful with the endless computing time, much like bringing a missile launcher to a fist fight
+
+Classifier : 
+MLPClassifier(activation='logistic', alpha=0.0001, batch_size='auto',
+       beta_1=0.9, beta_2=0.999, early_stopping=False, epsilon=1e-08,
+       hidden_layer_sizes=(100,), learning_rate='constant',
+       learning_rate_init=0.001, max_iter=200, momentum=0.9,
+       nesterovs_momentum=True, power_t=0.5, random_state=None,
+       shuffle=True, solver='lbfgs', tol=0.0001, validation_fraction=0.1,
+       verbose=False, warm_start=False)
+Accuracy: 1.00 (+/- 0.00)
+
+Classifier : 
+LinearSVC(C=1.0, class_weight=None, dual=True, fit_intercept=False,
+     intercept_scaling=1, loss='squared_hinge', max_iter=1000,
+     multi_class='ovr', penalty='l2', random_state=None, tol=0.0001,
+     verbose=0)
+Accuracy: 1.00 (+/- 0.00)
+
+Classifier : 
+SVC(C=1.0, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape='ovo', degree=3, gamma='auto', kernel='linear',
+  max_iter=-1, probability=False, random_state=None, shrinking=True,
+  tol=0.001, verbose=False)
+Accuracy: 1.00 (+/- 0.00)
+
+Classifier : 
+MultinomialNB(alpha=1.0, class_prior=None, fit_prior=True)
+Accuracy: 0.99 (+/- 0.00)
+
+Classifier : 
+RandomForestClassifier(bootstrap=True, class_weight=None, criterion='gini',
+            max_depth=None, max_features='auto', max_leaf_nodes=None,
+            min_impurity_decrease=0.0, min_impurity_split=None,
+            min_samples_leaf=1, min_samples_split=2,
+            min_weight_fraction_leaf=0.0, n_estimators=10, n_jobs=1,
+            oob_score=False, random_state=None, verbose=0,
+            warm_start=False)
+Accuracy: 0.99 (+/- 0.01)
+
+
+
+
+
+-------------------- SCORE NOUVEAU CORPUS --------------------------
+
+
+PREDICTION :
+
+
+C:\Program Files\Python35\lib\site-packages\sklearn\linear_model\stochastic_gradient.py:128: FutureWarning: max_iter and tol parameters have been added in <class 'sklearn.linear_model.stochastic_gradient.SGDClassifier'> in 0.19. If both are left unset, they default to max_iter=5 and tol=None. If tol is not None, max_iter defaults to max_iter=1000. From 0.21, default max_iter will be 1000, and default tol will be 1e-3.
+  "and default tol will be 1e-3." % type(self), FutureWarning)
+Score pour le classifieur SGDClassifier(alpha=0.0001, average=False, class_weight=None, epsilon=0.1,
+       eta0=0.0, fit_intercept=True, l1_ratio=0.15,
+       learning_rate='optimal', loss='log', max_iter=None, n_iter=None,
+       n_jobs=1, penalty='none', power_t=0.5, random_state=None,
+       shuffle=True, tol=None, verbose=0, warm_start=False) : 
+0.9838969404186796
+
+             precision    recall  f1-score   support
+
+   notierce       0.98      0.99      0.99       771
+     tierce       0.99      0.97      0.98       471
+
+avg / total       0.98      0.98      0.98      1242
+
+[[765   6]
+ [ 14 457]]
+Score pour le classifieur LinearSVC(C=1.0, class_weight=None, dual=True, fit_intercept=False,
+     intercept_scaling=1, loss='squared_hinge', max_iter=1000,
+     multi_class='ovr', penalty='l2', random_state=None, tol=0.0001,
+     verbose=0) : 
+0.9855072463768116
+
+             precision    recall  f1-score   support
+
+   notierce       0.98      0.99      0.99       771
+     tierce       0.99      0.97      0.98       471
+
+avg / total       0.99      0.99      0.99      1242
+
+[[765   6]
+ [ 12 459]]
+Score pour le classifieur SVC(C=1.0, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape='ovo', degree=3, gamma='auto', kernel='linear',
+  max_iter=-1, probability=False, random_state=None, shrinking=True,
+  tol=0.001, verbose=False) : 
+0.9871175523349437
+
+             precision    recall  f1-score   support
+
+   notierce       0.99      0.99      0.99       771
+     tierce       0.99      0.98      0.98       471
+
+avg / total       0.99      0.99      0.99      1242
+
+[[765   6]
+ [ 10 461]]
+Score pour le classifieur MultinomialNB(alpha=1.0, class_prior=None, fit_prior=True) : 
+0.9879227053140096
+
+             precision    recall  f1-score   support
+
+   notierce       0.99      0.99      0.99       771
+     tierce       0.99      0.98      0.98       471
+
+avg / total       0.99      0.99      0.99      1242
+
+[[765   6]
+ [  9 462]]
+Score pour le classifieur RandomForestClassifier(bootstrap=True, class_weight=None, criterion='gini',
+            max_depth=None, max_features='auto', max_leaf_nodes=None,
+            min_impurity_decrease=0.0, min_impurity_split=None,
+            min_samples_leaf=1, min_samples_split=2,
+            min_weight_fraction_leaf=0.0, n_estimators=10, n_jobs=1,
+            oob_score=False, random_state=None, verbose=0,
+            warm_start=False) : 
+0.9782608695652174
+
+             precision    recall  f1-score   support
+
+   notierce       0.97      0.99      0.98       771
+     tierce       0.99      0.95      0.97       471
+
+avg / total       0.98      0.98      0.98      1242
+
+[[767   4]
+ [ 23 448]]
+
+
+CROSS-VALIDATION :
+
+
+Classifier : 
+
+SGDClassifier(alpha=0.0001, average=False, class_weight=None, epsilon=0.1,
+       eta0=0.0, fit_intercept=True, l1_ratio=0.15,
+       learning_rate='optimal', loss='log', max_iter=None, n_iter=None,
+       n_jobs=1, penalty='none', power_t=0.5, random_state=None,
+       shuffle=True, tol=None, verbose=0, warm_start=False)
+
+Accuracy: 0.99 (+/- 0.00)
+
+
+Classifier : 
+
+LinearSVC(C=1.0, class_weight=None, dual=True, fit_intercept=False,
+     intercept_scaling=1, loss='squared_hinge', max_iter=1000,
+     multi_class='ovr', penalty='l2', random_state=None, tol=0.0001,
+     verbose=0)
+
+Accuracy: 0.99 (+/- 0.00)
+
+
+Classifier : 
+
+SVC(C=1.0, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape='ovo', degree=3, gamma='auto', kernel='linear',
+  max_iter=-1, probability=False, random_state=None, shrinking=True,
+  tol=0.001, verbose=False)
+
+Accuracy: 0.99 (+/- 0.00)
+
+
+Classifier : 
+
+MultinomialNB(alpha=1.0, class_prior=None, fit_prior=True)
+
+Accuracy: 0.99 (+/- 0.00)
+
+
+Classifier : 
+
+RandomForestClassifier(bootstrap=True, class_weight=None, criterion='gini',
+            max_depth=None, max_features='auto', max_leaf_nodes=None,
+            min_impurity_decrease=0.0, min_impurity_split=None,
+            min_samples_leaf=1, min_samples_split=2,
+            min_weight_fraction_leaf=0.0, n_estimators=10, n_jobs=1,
+            oob_score=False, random_state=None, verbose=0,
+            warm_start=False)
+
+Accuracy: 0.98 (+/- 0.01)
+
+
+-------------------------------------------------------------------------------------
+
+Maxi corpus :
+
+
+
+
+Score pour le classifieur SGDClassifier(alpha=0.0001, average=False, class_weight=None, epsilon=0.1,
+       eta0=0.0, fit_intercept=True, l1_ratio=0.15,
+       learning_rate='optimal', loss='log', max_iter=None, n_iter=None,
+       n_jobs=1, penalty='none', power_t=0.5, random_state=None,
+       shuffle=True, tol=None, verbose=0, warm_start=False) : 
+0.8504273504273504
+
+             precision    recall  f1-score   support
+
+          0       0.74      0.77      0.76       259
+          1       0.81      0.79      0.80       782
+          2       0.57      0.49      0.53        79
+          3       0.86      0.87      0.86       191
+          4       0.99      0.99      0.99       479
+          5       0.88      0.94      0.91       316
+
+avg / total       0.85      0.85      0.85      2106
+
+[[200  57   0   0   0   2]
+ [ 70 617  29  26   3  37]
+ [  0  40  39   0   0   0]
+ [  0  24   0 166   0   1]
+ [  0   5   0   0 473   1]
+ [  0  19   0   1   0 296]]
+Score pour le classifieur SVC(C=1.0, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape='ovo', degree=3, gamma='auto', kernel='linear',
+  max_iter=-1, probability=False, random_state=None, shrinking=True,
+  tol=0.001, verbose=False) : 
+0.8580246913580247
+
+             precision    recall  f1-score   support
+
+          0       0.76      0.79      0.78       259
+          1       0.82      0.80      0.81       782
+          2       0.60      0.47      0.52        79
+          3       0.87      0.87      0.87       191
+          4       0.99      0.98      0.99       479
+          5       0.88      0.95      0.91       316
+
+avg / total       0.86      0.86      0.86      2106
+
+[[205  52   0   0   0   2]
+ [ 64 628  25  25   3  37]
+ [  0  42  37   0   0   0]
+ [  0  23   0 167   0   1]
+ [  0   7   0   0 471   1]
+ [  0  16   0   1   0 299]]
+Score pour le classifieur MultinomialNB(alpha=1.0, class_prior=None, fit_prior=True) : 
+0.7905982905982906
+
+             precision    recall  f1-score   support
+
+          0       0.86      0.10      0.17       259
+          1       0.65      0.93      0.77       782
+          2       0.95      0.24      0.38        79
+          3       0.95      0.60      0.73       191
+          4       0.99      0.99      0.99       479
+          5       0.88      0.96      0.92       316
+
+avg / total       0.83      0.79      0.75      2106
+
+[[ 25 233   0   0   0   1]
+ [  4 729   1   5   4  39]
+ [  0  60  19   0   0   0]
+ [  0  76   0 114   0   1]
+ [  0   3   0   0 476   0]
+ [  0  13   0   1   0 302]]
+
+
+Maxi corpus sans autres :
+
+
+
+Score pour le classifieur SGDClassifier(alpha=0.0001, average=False, class_weight=None, epsilon=0.1,
+       eta0=0.0, fit_intercept=True, l1_ratio=0.15,
+       learning_rate='optimal', loss='log', max_iter=None, n_iter=None,
+       n_jobs=1, penalty='none', power_t=0.5, random_state=None,
+       shuffle=True, tol=None, verbose=0, warm_start=False) : 
+0.9885670731707317
+
+             precision    recall  f1-score   support
+
+          0       0.97      0.99      0.98       268
+          1       0.98      0.94      0.96        65
+          2       0.98      0.99      0.99       191
+          3       1.00      0.99      1.00       493
+          4       0.99      0.99      0.99       295
+
+avg / total       0.99      0.99      0.99      1312
+
+[[266   0   1   0   1]
+ [  3  61   0   0   1]
+ [  1   0 190   0   0]
+ [  0   1   3 489   0]
+ [  4   0   0   0 291]]
+Score pour le classifieur SVC(C=1.0, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape='ovo', degree=3, gamma='auto', kernel='linear',
+  max_iter=-1, probability=False, random_state=None, shrinking=True,
+  tol=0.001, verbose=False) : 
+0.989329268292683
+
+             precision    recall  f1-score   support
+
+          0       0.97      1.00      0.98       268
+          1       1.00      0.92      0.96        65
+          2       0.98      1.00      0.99       191
+          3       1.00      0.99      0.99       493
+          4       0.99      0.99      0.99       295
+
+avg / total       0.99      0.99      0.99      1312
+
+[[267   0   0   0   1]
+ [  4  60   0   0   1]
+ [  0   0 191   0   0]
+ [  1   0   4 488   0]
+ [  3   0   0   0 292]]
+Score pour le classifieur MultinomialNB(alpha=1.0, class_prior=None, fit_prior=True) : 
+0.944359756097561
+
+             precision    recall  f1-score   support
+
+          0       0.94      0.99      0.97       268
+          1       1.00      0.62      0.76        65
+          2       0.99      0.79      0.88       191
+          3       0.91      1.00      0.95       493
+          4       0.98      0.99      0.98       295
+
+avg / total       0.95      0.94      0.94      1312
+
+[[266   0   0   0   2]
+ [ 10  40   0  14   1]
+ [  3   0 151  34   3]
+ [  0   0   2 491   0]
+ [  4   0   0   0 291]]
+
